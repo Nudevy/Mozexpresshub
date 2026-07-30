@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-MZ">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>MozExpress Hub — Controlo de Vendas</title>
+<meta name="theme-color" content="#1657C7" />
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIk1vekV4cHJlc3MgSHViIC0gQ29udHJvbG8gZGUgVmVuZGFzIiwgInNob3J0X25hbWUiOiAiTW96RXhwcmVzcyBIdWIiLCAiZGVzY3JpcHRpb24iOiAiU2lzdGVtYSBkZSBjb250cm9sbyBkZSB2ZW5kYXMsIGVzdG9xdWUgZSBmYXR1cmFtZW50byBkYSBNb3pFeHByZXNzIEh1YiIsICJzdGFydF91cmwiOiAiLiIsICJzY29wZSI6ICIuIiwgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsICJvcmllbnRhdGlvbiI6ICJwb3J0cmFpdCIsICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmOGZhZmMiLCAidGhlbWVfY29sb3IiOiAiIzE2NTdDNyIsICJpY29ucyI6IFt7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQU1BQUFBREFDQVlBQUFCUzNHd0hBQUFHZWtsRVFWUjRuTzNkN1hVVFNSQ0Y0WUt6TVVBcUVBbUV1RVFDcWF5VGdCOUd4L0tzUmxMUDlNZTlWZThUQUxTNjZuYjFXSklkQVFBQUFBQUFBQUFBQUFBQWtNYUgxUXM0NDlPM243OVhyd0d2WG41OHRld2xtMFhUN0g0Y1FpRzlRSm8rRDlVd1NDNkt4czlMTFFoU2k2SHg2MUFKZ3NRaWFQeTZWZ2RoNlg5TzQrTmlWUkErcnZoUEkyaCt2TGVxSDZhbmpzYkhJek9ud2RRSlFQUGpHVFA3WkZvQWFINjBtTlV2VXdKQTgrT0lHWDB6UEFBMFA4NFkzVDlEQTBEem80ZVJmVFFzQURRL2VoclZUME1DUVBOamhCRjkxVDBBTkQ5RzZ0MWZYUU5BODJPR25uMjI3S01RZ0lKdUFlRDB4MHk5K3EzTFp5NW8vbjMvL2Z2bDlML3grZnV2RGl2SjZlem5odjdwdFJEMGFmWm4vMTFDMGNmcENWRDU5Qi9WOEVkVURzU1pLY0FFYUtEVThGdmJ0VlVPUkl0VEU2REs2YS9jK0k5VUNjTFJLY0FFMk9IYzlOZXVYMGVWTUxRNFBBR3ludjVaR3YrZXJFRTRNZ1dZQUg5VmFQeUx5MnZOR29RV2h5WkFwdE8vVXVQdnlSU0UxaWxRK3FNUU5QK3J5dnRROGdwVXVlQjdxbDZMbWllQSsvV0g1ci9QZlg5YSs3UE1CSEF2N0V5VnBrR0pad0NhLzVnSys1WStBQldLT0ZMMi9VdDdCY3BldUpreVg0bWFKb0RMQXpETlA0Ykx2cmIwYWJvcmtFdVJYR1hiMzFRQnlGWWNWWm4yT1UwQU1oWEZRWmI5VGhHQUxNVndrMkhmN1FPUW9Rak8zUGZmT2dEdW01K0ZjeDFzQStDODZSbTUxc00yQUVBUGxnRndQVzJ5YzZ5TFhRQWNON2tTdC9wWUJjQnRjNnR5cXBOVkFJRGViQUxnZEtyQXAxNFdBWERaVEx6blVEZUxBQUNqeUFmQTRSVEJQdlg2U1FkQWZmUHdIT1U2cHZwS3BOTlg5cFNib2hMWkNVQ0Q1S0phVDlrQXRISTYvYUdqNlJlSnp2cFMvTkhUWWhzQzFWT25zbGtIMWJPL0pEZk5CSWpnendTaG5Wd0FlcC9haEVDTDJsU1dDOEJaL0VsUnRFZ1hnQWhDZ09kSkJhRG5lRlFidFhpalZCdXBBUFRHUXpFZWtRbkFyRk9CRUdoUW1RSXlBUmlGNXdIY2t6NEFFVHFuRGZTVUNFQUV6d080VFNJQXEwNW9RckNXd21TV0NNQXNQQTlncTFRQUlnZ0IzaXNYZ0FpTjBRc055d093cWhsNUtOYXcrakJLOVpYSXM2cUZZSFh6S1ZnK0FWYXEzZ0RWQW45TDZRQkVFSUxxdUFKdFZBZ0VKLyticFJOQXBkbXUxNUc5T2E1Zm4rTCt6MWIrQ29UYUNBQktJd0FvalFDZ05BTHdWNFVIWWNVSDROVUlBRW9qQUNpTkFLQTBBb0RTQ01DVnpBL0NQQURmUmdCUUdnRkFhUVFBcFJHQWplejM0K3l2cnhVQnVDUExnM0NXMXpFQ0FVQnBTd1BBeVlTSXRYM0FCRUJwQk9DR1RHK0k4UWJZZlFRQXBSRUFsTFk4QU81WERKeXp1djdMQXdDc1JBQjJaSGdRNWdINE1RS0EwaVFDNEhyQzRoeUZ1a3NFQUZpRkFLQTBBbkNIODRNd0Q4RFBrZm4xNkorLy81SXZsRnNJbEtuc0pSTUFwVWtGUU9WVXVGQmJ6MUZxcjBOcFBUSlhJRFgzaXFSOFZkdGJ0OE1WY3dXcENRRE1KaGNBcGZHSS90VHFLeGNBRlh2WEJmVnJoT3U2VjVFTWdNb3BzVzBhbHlaU1hiZEtYYS94RVB5QVN2TzBjbDMzYkpJVElFTHp0TUJ4cXZXVURRQXdnM1FBVkU4TnRGR3VvM1FBSXJRM0Q0K3AxMDgrQU1CSUZnRlFQMFZ3bTBQZExBSVE0YkdaZU9OU0w1c0FBQ05ZQmNEbFZLbk9xVTVXQVlqdzJ0eUszT3BqRjRBSXYwMnV3ckV1bGdFQWVyRU5nT05wazVsclBXd0RFT0c3NmRrNDE4RTZBQkhlbTUrQisvN2JCeURDdndpdU11eDdpZ0JFNUNpR2t5ejduU1lBRVhtS29pN1RQcWNLUUVTdTRpakt0cjlOQVhqNThmWERxSVgwbEsxSUtsejJ0YVZQMDM0cC9sSXN2aHgrbmt2akg1SHVDclNWdVhnelpOKy85QUdJeUYvRVVTcnNXOW9yMEJaWG91ZFZhUHlMNWduZzhpQzhwMUp4ajNEZm45YitMRE1CcmpFTi9zKzk4WThxOFF5d3AyclJ0eXJ2dytIcnpLZHZQMy8zWE1ocUZhZEJ0c1kvY2owdmVRVzZwZEsxS0Z2am4zSHFnVGJiRkxpV01RaVpHLy9vRDJlWUFEdXkvSjNkekUzZncra2ZhV2FlQWx0T1FhalUrR2QrTk04RWFMQnRLcVZBVkdyNG5ycThxVlZwQ3R3ek14QTAvS3V6Yjh3eUFUcTYxWlE5UWtHemo5UHRZdzFNQWN6VzQyTTUzZDRKZHYrTUVMejA2cmZTSDRVQXVnYUFLWUFaZXZaWjl3bEFDREJTNy80YWNnVWlCQmhoUkY4TmV3WWdCT2hwVkQ4TmZRZ21CT2hoWkI4Ti95a1FJY0Faby90bnlvOUJDUUdPbU5FMzA5NEhJQVJvTWF0ZnByNFJSZ2p3akpsOXNxd2grZXdRdGxZY2tNcytDc0Uwd0xWVi9TRFJoRXlEdWxZZmhCSUJ1Q0FJZGF4dS9BdUpSV3dSaEx4VUd2OUNhakZiQkNFUHRjYS9rRnpVTFlUQmoyclRYNU5mNEQyRVFvZERzd01BQUFBQUFBQUFBQUFBS3ZnRFFURkxjTWJnWmIwQUFBQUFTVVZPUks1Q1lJST0iLCAic2l6ZXMiOiAiMTkyeDE5MiIsICJ0eXBlIjogImltYWdlL3BuZyIsICJwdXJwb3NlIjogImFueSBtYXNrYWJsZSJ9LCB7InNyYyI6ICJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQWdBQUFBSUFDQVlBQUFEMGVOVDZBQUFTNTBsRVFWUjRuTzNkN1puVXVCSUdVTEVQTWJDcFFDUnNpQkFKbXdva3dmM0JuYVdaNlpsMnR5MnJQczVKWVBwYVV0WHJrcGM3QmdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUE3UFZ1OVE4Z2xnK2Z2LzFjL1J1QWVYNTgvYVR1TThZUUFOclI0SUczQ0FoOVdPakNOSHZnQ0VKQlRSYTFFQTBmT0lOQVVJTkZURXpEQnlJUUNIS3lhTWxvK2tCa3drQWVGaW9CVFIvSVNCaUl6ZUlFcGVrRGxRZ0Q4VmlRWURSK29ESkJJQTRMRVlDbUQzUWtES3psNFMrazhRTUlBcXQ0NkF0by9BQXZDUUxuOHJCUHBQRUQzQ1lJbk1ORFBvSEdEM0EvUVdBdUQzY2lqUjlnUDBGZ2pyOVcvNENxTkgrQVk2aW5jMGhWQjdOUkFlWXhEVGlPQjNrUWpSL2dQSUxBZnE0QURxRDVBNXhMM2QxUGd0ckJCZ1JZenpUZ01TWUFEOUw4QVdKUWp4OGpBRHpBWmdPSVJWMituN0hKSFd3d2dQaGNDV3hqQXJDUjVnK1FnM3E5alFDd2djMEVrSXU2ZlpzeHlSdHNJSUQ4WEFsY1p3THdDczBmb0FiMS9Eb0I0QXFiQmFBV2RmMGxBZUFabXdTZ0p2WDlUd0xBQlpzRG9EWjEvamNCNFA5c0NvQWUxUHRmQklCaE13QjBvKzRMQURZQlFGUGQ2My9yQU5COThRRzY2OXdIMmdhQXpvc093RzlkKzBITEFOQjFzUUc0cm1OZmFCY0FPaTR5QUxkMTZ3K3RBa0MzeFFYZ1BwMzZSSnNBMEdsUkFYaGNsMzdSSWdCMFdVd0FqdEdoYjVRUEFCMFdFWURqVmU4ZnBRTkE5Y1VEWUs3S2ZhUjBBQUFBcmlzYkFDcW5OZ0RPVTdXZmxBd0FWUmNMZ0RVcTlwVnlBYURpSWdHd1hyWCtVaTRBQUFDM2xRb0ExZElaQUxGVTZqTmxBa0NsUlFFZ3Jpcjlwa1FBcUxJWUFPUlFvZStVQ0FBQXdIM1NCNEFLS1F5QWZMTDNuM2VyZjhBZTJSOCtIT243bDQrbi9hMi8vL24zdEw4RjBmMzQraWxsTDMyLytnY0F0NTNaM0xmWThudUVCSWd0WldvWnc5cy85VVJyOGpNSkIxU1RjUXBnQWdBTGRHcjIxMXo3M3k4VXdMblNKWll4dlAyVFMvZG12NGRRUUNiWnBnQ3BmdXdZbWoveGFmanpDQVJFbHlrRXVBS0FuVFQ4OHp4LzFnSUJQQzVOVWhuRDJ6OXhhUHJ4Q0FORWtXVUtZQUlBRzJuNnNWMnVqekFBdDZWSUtXTjQrMmNOVFQ4L1lZQVZNa3dCVEFEZ0dVMi9GcE1CdUM1OFFobkQyei96YWZyOUNBUE1GbjBLWUFKQWF4cC9YMDlyTHdqUVZlaDBNb2EzZjQ2bjZmTWFZWUNqUlo0Q21BRFFoc2JQTGFZQ2RCSTJtWXpoN1o5amFQdzhTaERnQ0ZHbkFDWUFsS1h4czVlSkFKVUpBSlNpNlRPRC81U1Fpa0tPSmNZdy91YytHajluRXdTNFI4UnJBQk1BVXRQNFdjWDFBTm45dGZvSFhPUHRueTAwZnlLd0Q5a2lZbDh6QVNBZEJaZG9UQVBJU0FBZ0RZMmY2QVFCTWduM1VVTEVNUWxyYWZ4a0pRandYS1NQQVUwQUNFdmpKenNUQVNJTCtSRWdhUDVVWWo4VFVaaFJ4QmpHL3lpVTFHY2FRSlJyQUJNQXd0RDg2Y0ErSndyZkFMQ2Nna2czdmcwZ2dqQVRBT1AvbmpSL09yUC9lNHJTNzB3QVdFTGhnMTlNQTFnbHpBU0FQalIvZU1tNTRHd21BSnhHZ1lPM21RWndwaEFUZ0NqM0ljeWorY04yemt0OUVmcGVpQUJBYllvWjNNKzVZVFpYQUV5amdNRStyZ1NZeVFTQUtUUi9PSTd6eEF6TEEwQ0VleENPcFZqQjhaeXJlbGIzUDFjQUhFYUJncmxjQ1hDazVSTUFhdEQ4NFR6T0cwY1FBTmhOTVlMek9YZnNKUUN3aXlJRTZ6aC83TEUwQUt6K0FJSjlGQjlZenpuTWJXVWY5QkVnZDFOd0lCWWZCL0lJVndEY1JmT0h1SnhQN2lFQXNKbmlBdkU1cDJ3bEFMQ0pvZ0o1T0s5c0lRQndrMklDK1RpMzNDSUE4Q1pGQlBKeWZubUxBTUNyRkEvSXp6bm1OY3NDZ0g4RElEWkZBK3B3bm1OYjFROU5BSGhCc1lCNm5HdWVFd0Q0Z3lJQmRUbmZYQklBK0kvaUFQVTU1endSQUJoaktBclFpZlBPR0FJQVF6R0FqcHg3QklEbUZBSG95L252VFFCb3pPRUgxSUcrQklDbUhIcmdpWHJRa3dEUWtNTU9QS2N1OUNNQUFFQkRBa0F6VWo3d0d2V2hGd0dnRVljYnVFV2Q2RU1BYU1LaEJyWlNMM29RQUJwd21JRjdxUnYxQ1FERk9jVEFvOVNQMmdRQUFHaElBQ2hNZWdmMlVrZnFFZ0NLY21pQm82Z25OUWtBQlRtc3dOSFVsWG9FQUFCb1NBQW9Sa29IWmxGZmFoRUFDbkU0Z2RuVW1Ub0VnQ0ljU3VBczZrME5BZ0FBTkNRQUZDQ05BMmRUZC9JVEFKSnpDSUZWMUovY0JBQUFhRWdBU0V6NkJsWlRoL0lTQUpKeTZJQW8xS09jQkFBQWFFZ0FTRWphQnFKUmwvSVJBSkp4eUlDbzFLZGNCQUFBYUVnQVNFUzZCcUpUcC9JUUFKSndxSUFzMUtzY0JBQUFhRWdBU0VDYUJySlJ0K0lUQUFDZ29mZXJmd0J2VzVtaS8vN24zMlYvbS8yOGdiSGE5eThmMVpIQVRBQUFvQ0VCSURCdmNFQjI2bGhjQWdBQU5DUUFCTFU2TmJ1M0E0Nnl1cDV4blFBUTBPb1AvelIvNEdoQ1FEd0NBUC9SK0FINkVBQ0NXWm1TSlhSZ0pqVW1GZ0dBUHppZ0FEMElBSUZvdmtCMTZsd2MvaVZBWG5qa1grOXlxQUZ5TVFIZ3Fuc2J1ZzhJQVhJUkFJS0krQVl0QkFBelJLeDNIUWtBQU5DUUFCQkE1RFJzQ2dETUVMbnVkU0VBY0pNUUFGQ1BBTEJZbGhRc0JBQkh5MUwvcWhJQTJFd0lBS2hEQUZoSStnVzZVd2ZYRVFDNGl5a0FRQTBDQUhjVEFnRHlFd0FXeVQ3MkVnS0FvMlN2aDFrSkFEek1vUVhJU3dCWW9HdmpOQVVBWHRPMUxxNGtBTENMcXdDQW5BUUFkaE1DQVBJUkFFNVdkY3dsQkFCN1ZhMlBVUWtBQU5DUUFNQmhUQUVBOGhBQVR0Umh2Q1VFQUh0MHFKTlJDQUFjVGdnQWlFOEFZQW9oQUNBMkFlQWt4bG9BMjZpWDV4QUFtTVlVQUNBdUFZQ3BoQUNBbUFTQUUzUWZad2tCd0wyNjE4MHpDQUNjd21FR2lFVUFJQ1JUQUlDNUJJREp2UG4rNWlvQXVJZjZPWmNBd0ttRUFJQVlCQUJPSndRQXJDY0FBRUJEQXNCRTdxOWVad29BYktHT3ppTUFzSXdRQUxDT0FNQlNRZ0RBR2dJQXl3a0JBT2NUQUNaeGJ3VndEUFYwRGdHQUVFd0JBTTRsQUJDR0VBQndIZ0dBVUlRQWdITUlBSVRqdmc5Z3Z2ZXJmMEJGR3RpNVRBRll6Wm1mNy91WGo4NzZ3VXdBQ0VsQkJaaExBQ0FzSVFCZ0hnR0EwSVFBZ0RrRUFBQm82TjJxUC96aDg3ZWZxLzcyVE41WTUvRHhEOW1vQlhOVXJRVS92bjQ2dlIrYkFBQkFRd0lBQURRa0FKQ0NjU3FaMks5a0lBQUFRRVArSlVCSzhnYkcwYXArZkVaZkpnQUEwSkFBY0NCdm5YTjV2bVJnbjg3bCtSNUhBQUNBaGdRQUFHaElBS0FrSDJ4eEpQdUppZ1FBQUdoSUFDQVZId0FSbWYxSkpnSUFBRFFrQUZDV2UxdU9ZQjlSbFFBQUFBMEpBQWR4OTNjZXo1cUk3TXZ6ZU5iSEVBQUFvQ0VCQUFBYUVnQW96UWRjN0dIL1VKa0FBQUFOQ1FDazVDTWdJckVmeVVnQUFJQ0dCQUFBYUVnQW9Ed2ZjdkVJKzRicUJBQUFhRWdBSUMwZlhoR0JmVWhXQWdBQU5DUUEwSUw3WE81aHY5Q0JBQUFBRFFrQXBPYitsWlhzUHpJVEFBQ2dJUUVBQUJvU0FHakRoMTFzWVovUWhRQUFBQTBKQUtUblF5eFdzTy9JVGdBQWdJWUVBRnB4djh0YjdBODZFUUFBb0NFQmdCTGN4M0ltKzQwS0JBQUFhRWdBQUlDR0JBRGE4YUVYMTlnWGRDTUFIRVR4QURpSGVuc01BWUF5ZkpqRkdld3pxaEFBQUtBaEFZQ1dqQkM1WkQvUWtRQUFBQTBKQUpUaWZwYVo3QzhxRVFBQW9DRUJBQUFhRWdCb3k0ZGZqR0VmMEpjQWNDQ0ZCR0F1ZGZZNEFnRGwrRkNMR2V3cnFoRUFBS0FoQVlEV2pCTjdzLzUwSmdBQVFFTUNBQ1c1citWSTloTVZDUUFBMEpBQWNEQjNpZ0J6cUsvSEVnQm9UMUhweWJyVG5RQUFBQTBKQUpUbHd5Mk9ZQjlSbFFBQUFBMEpBQk80Vzh6SG12Vml2Zk94WnNjVEFBQ2dJUUdBMHR6ZnNvZjlRMlVDQUFBMEpBQUFRRU1Dd0NRK1dNbkhtdlZnbmZPeFpuTUlBQURRa0FCQWVUN2s0aEgyRGRVSkFBRFFrQUF3a1hzcmdIM1UwWGtFQUxpZzJOUm1mZUUzQVFBQUdoSUFhTUVIWGR6RGZxRURBV0F5STBlQXg2aWZjd2tBOEl5aVU1TjFoVDhKQUFEUWtBQndBbThlTWJqWFpRdjdKQVoxY3o0QkFBQWFFZ0FBb0NFQjRDVEdXYmxZcjFxc1p5N1c2eHdDQUFBMDlINzFENEF6ZmYveWNmUGJoYmVRZm53QVNDY21BQ2ZTVUFEZXBrNmVSd0FBZ0lZRUFBQm9TQUE0bWZIV2V1NTV1Y2ErV0U5OVBKY0FBQUFOQ1FDMDlmM0xSMjk5emRrRGRQWnUxUi8rOFBuYnoxVi9Pd0pGWnozalJwNDRqK3QxUDQ4L3ZuNDZ2Ui83ZHdCb3AzdWg0YVduUFNFSTBJa3JnRVUwb1RVOGQ5NWlmNnpodWE5aEFnQWJlVHZNUTBPQjIwd0FhR052VTlCVWNyRE9zSTBBc0pCQ0EzU25EcTRqQU5EQ1VVVkdzWXJOT3NOMkFzQmlDZzNRbGZxM2xnQUFBQTBKQUFGSXdVQTM2dDU2QWdBQU5DUUFCQ0VOejNYVWY4UHYzd0tJelRybm9ON0ZJQUFBUUVNQ0FHM3NmYXZ6VnBpRGRZWnRCSUJBak1XQTZ0UzVPQVFBV25uMDdjNWJZUzdXR1c0Ny9mOS8rTW1Iejk5K3J2cmIwU2xDNTlqeUptSXQ4clBPY1hqN2Y5MlByNTlPNzhmKzN3QnA2Nm5vWHl0S0drSWQxaG11TXdFSVNtRUNLdkgyLzdZVkV3RGZBQVRsc0FCVnFHY3hDUUFBMEpBQUVKalVER1NuanNVbEFBQkFRd0pBY05JemtKWDZGWnNBQUFBTkNRQUpTTkZBTnVwV2ZBSUFBRFFrQUNRaFRRTlpxRmM1Q0FDSk9GUkFkT3BVSGdJQUFEUWtBQ1FqWFFOUnFVKzVDQUFKT1dSQU5PcFNQZ0lBQURRa0FDUWxiUU5ScUVjNUNRQ0pPWFRBYXVwUVhnSUFBRFFrQUNRbmZRT3JxRCs1Q1FBRk9JVEEyZFNkL0FRQUFHaElBQ2hDR2dmT290N1VJQUFVNGxBQ3M2a3pkUWdBeFRpY3dDenFTeTBDQUFBMEpBQVVKS1VEUjFOWDZoRUFpbkpZZ2FPb0p6VUpBSVU1dE1CZTZraGRBZ0FBTkNRQUZDZTlBNDlTUDJvVEFCcHdpSUY3cVJ2MUNRQk5PTXpBVnVwRkR3SkFJdzQxY0lzNjBZY0EwSXpERGJ4R2ZlaEZBQUNBaGdTQWhxUjg0RGwxb1I4Qm9DbUhIWGlpSHZRa0FEVG0wQVBxUUY4Q1FITU9QL1RsL1BjbUFLQUlRRVBPUFFJQVl3ekZBRHB4M2hsREFPQ0NvZ0QxT2VjOEVRRDRnK0lBZFRuZlhCSUFlRUdSZ0hxY2E1NWJGZ0IrZlAzMGJ0WGY1amJGQXVwd25tTmIxUTlOQUhpVm9nSDVPY2U4UmdEZ1RZb0g1T1g4OGhZQmdKc1VFY2pIdWVVV0FZQk5GQlBJdzNsbEN3R0F6UlFWaU04NVpTc0JnTHNvTGhDWDg4azkzcS8rQWVUelZHUytmL200K0pjQVkyajhQR2JwQk1DL0JaQ2JvZ1ByT1llNXJleURyZ0RZUmZHQmRady85aEFBMkUwUmd2TTVkK3dsQUhBSXhRak80N3h4QkI4QmNoZ2ZCOEpjR2o5SFdqNEI4Q0ZnUFlvVUhNKzVxbWQxLzFzZUFLaEpzWUxqT0UvTTRBcUFhVndKd0Q0YVB6T1pBRENkSWdiM2MyNllMVVFBV0gwUHdueUtHV3pudk5RWG9lKzVBdUEwcmdUZ2JSby9ad294QWFBWFJRNWVjaTQ0bXdrQVM1Z0d3QzhhUDZ1RW1RQkV1QS9oZklvZm5kbi9QVVhwZHlZQUxHY2FRRGNhUHhHRW1RQ0Fva2dIOWpsUmhCaERYUHJ3K2R2UDFiK0I5VXdEcUVialo0dzQ0Lzh4VEFBSVNyR2tFdnVaaUh3RFFGaStEU0E3alovSXdvd2lMcmtHNEJwQmdDdzBmcTZKTlA0Znd3U0FSRXdFaUU3akp4TUJnSFFFQWFMUitNa281RWVBMGNZa3hLVG9Fb0Y5eUJZUis1b0pBS21aQnJDS3hrOTI0UkxKSlI4RGNpOUJnTmswZnU0VjhlMS9EQk1BaXJrc3pzSUFSOUgwcVVnQW9DelhBK3lsOFZOWnlMSEVKZGNBSEVVUVlDdU5uNk5FSGYrUFlRSkFJeVlDM0tMeDAwbllaSExKRklCWmhBRTBmV2FKL1BZL2hna0F6WmtLOUtYeDAxM29kSExKRklDekNBTjFhZnFjSmZyYi94Z21BUENDLzVTd0ZrMGZyZ3VmVUM2WkFyQ1NNSkNIcHM5S0dkNyt4ekFCZ00xTUJtTFQ5T0UrS1ZMS0pWTUFvaEVHMXRIMGlTYkwyLzhZSmdDdzIvTW1KQkRNbytIRGNkSWtsVXVtQUdRaUVEeE93eWVUVEcvL1l5UU5BR01JQWVRbUZMeWsyWk5adHVZL2hpc0FXT0phcytzVUNqUjdXQzlkWXJsa0NrQVhHY09CSms4WEdkLyt4ekFCZ0JTMk5OTXpRNExtRHZtbFRDMlhUQUVBV0NYcjIvOFlZL3kxK2dmc2xmbmhBNUJYOXY2VFBnQUFBUGNyRVFDeXB6QUFjcW5RZDBvRWdERnFMQVlBOFZYcE4yVUN3QmgxRmdXQW1DcjFtVklCQUFEWXBsd0FxSlRPQUlpalduOHBGd0RHcUxkSUFLeFZzYStVREFCajFGd3NBTTVYdForVURRQUF3T3RLQjRDcXFRMkFjMVR1STZVRHdCaTFGdytBZWFyM2ovSUJZSXo2aXdqQXNUcjBqUllCWUl3ZWl3bkFmbDM2UlpzQU1FYWZSUVhnTVozNlJLc0FNRWF2eFFWZ3UyNzlvVjBBR0tQZklnUHd0bzU5b1dVQUdLUG5ZZ1B3VXRkKzBEWUFqTkYzMFFINHBYTWZhQjBBeHVpOStBQ2RkYS8vN1FQQUdEWUJRRGZxdmdEd0g1c0JvQWYxL2hjQjRJSk5BVkNiT3YrYkFQQ016UUZRay9yK0p3SGdDcHNFb0JaMS9TVUI0QlUyQzBBTjZ2bDFIc29HSHo1Lys3bjZOd0J3SDQzL2JTWUFHOWhFQUxtbzI3Y0pBQnZaVEFBNXFOZmJlRWdQY0NVQUVJL0dmeDhUZ0FmWVpBQ3hxTXYzRXdBZVpMTUJ4S0FlUDhaRE80QXJBWUR6YWZ6N21BQWN3Q1lFT0plNnU1OEhlRERUQUlCNU5QN2plSkNUQ0FJQXg5SDRqK2NLWUJLYkZlQVk2dWtjSHVvSlRBTUE3cWZ4eitYaG5rZ1FBTGhONHorSGg3eUFJQUR3a3NaL0xnOTdJVUVBUU9OZnhVTVBRQkFBT3RMNDEvTHdneEVHZ01vMC9UZ3NSRkNDQUZDSnhoK1BCVWxBR0FBeTB2UmpzempKQ0FOQVpKcCtIaFlxTVdFQWlFRFR6OG1pRlNJUUFHZlE4R3V3aUlVSkJNQVJOUHlhTEdvelFnSHdGczIrRHd2Tkh3UUVxRTJEQndBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFLYjVIOVBNL245TllWcm5BQUFBQUVsRlRrU3VRbUNDIiwgInNpemVzIjogIjUxMng1MTIiLCAidHlwZSI6ICJpbWFnZS9wbmciLCAicHVycG9zZSI6ICJhbnkgbWFza2FibGUifV19" />
+<link rel="icon" href="data:image/png;base64,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" />
+<link rel="apple-touch-icon" href="data:image/png;base64,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" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="MozExpress Hub" />
+<script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body { margin:0; background:#f8fafc; -webkit-tap-highlight-color: transparent; }
+  * { -webkit-user-select:none; user-select:none; }
+  input, select { user-select:text; -webkit-user-select:text; }
+</style>
+</head>
+<body>
+<div id="root"></div>
+
+<script type="text/babel" data-presets="react">
+const { useState, useEffect, useMemo } = React;
+
+const STORAGE_PRODUCTS = "mozexpress_products";
+const STORAGE_SALES = "mozexpress_sales";
+
+const fmt = (n) => new Intl.NumberFormat("pt-MZ", { minimumFractionDigits: 2, maximumFractionDigits: 2 }).format(n || 0);
+const todayKey = (d = new Date()) => d.toISOString().slice(0, 10);
+
+const seedProducts = [
+  { id: "p1", name: "Smartwatch X1", price: 2500, cost: 1500, stock: 12 },
+  { id: "p2", name: "AirPods Pro (réplica)", price: 1800, cost: 1000, stock: 20 },
+  { id: "p3", name: "Caixa de Som Bluetooth", price: 1200, cost: 700, stock: 15 },
+];
+
+function useStorage() {
+  const [products, setProducts] = useState(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_PRODUCTS);
+      return raw ? JSON.parse(raw) : seedProducts;
+    } catch (e) { return seedProducts; }
+  });
+  const [sales, setSales] = useState(() => {
+    try {
+      const raw = localStorage.getItem(STORAGE_SALES);
+      return raw ? JSON.parse(raw) : [];
+    } catch (e) { return []; }
+  });
+
+  const saveProducts = (next) => {
+    setProducts(next);
+    try { localStorage.setItem(STORAGE_PRODUCTS, JSON.stringify(next)); } catch (e) {}
+  };
+  const saveSales = (next) => {
+    setSales(next);
+    try { localStorage.setItem(STORAGE_SALES, JSON.stringify(next)); } catch (e) {}
+  };
+
+  return { products, sales, saveProducts, saveSales };
+}
+
+// --- Simple inline icons (no external icon library needed) ---
+const Icon = {
+  Cart: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke={p.color||"currentColor"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle>
+      <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+    </svg>
+  ),
+  Plus: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M12 5v14M5 12h14"/></svg>
+  ),
+  Trash: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="3 6 5 6 21 6"></polyline><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path><path d="M10 11v6M14 11v6"></path>
+    </svg>
+  ),
+  Trend: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+  ),
+  Package: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><polyline points="3.29 7 12 12 20.71 7"></polyline><line x1="12" y1="22" x2="12" y2="12"></line></svg>
+  ),
+  Dollar: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+  ),
+  Alert: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+  ),
+  Receipt: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 2h16v20l-3-2-2 2-2-2-2 2-2-2-2 2-3-2Z"></path><line x1="8" y1="7" x2="16" y2="7"></line><line x1="8" y1="11" x2="16" y2="11"></line></svg>
+  ),
+  Grid: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
+  ),
+  Layers: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+  ),
+  Chevron: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  ),
+  X: (p) => (
+    <svg viewBox="0 0 24 24" width={p.size||20} height={p.size||20} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+  ),
+};
+
+function Logo({ size = 44 }) {
+  return (
+    <div className="flex items-center gap-3">
+      <div className="flex items-center justify-center rounded-full bg-white shrink-0" style={{ width: size, height: size }}>
+        <Icon.Cart color="#1657C7" size={size * 0.5} />
+      </div>
+      <div className="leading-tight">
+        <div className="font-extrabold text-white tracking-tight" style={{ fontSize: size * 0.42 }}>
+          MozExpress<span className="font-normal text-blue-200"> Hub.online</span>
+        </div>
+        <div className="text-blue-200 tracking-[0.2em] font-medium" style={{ fontSize: size * 0.19 }}>SOLUÇÃO FÁCIL</div>
+      </div>
+    </div>
+  );
+}
+
+function StatCard({ icon: I, label, value, tone = "blue", sub }) {
+  const tones = {
+    blue: "bg-blue-50 text-blue-700 ring-blue-100",
+    green: "bg-emerald-50 text-emerald-700 ring-emerald-100",
+    amber: "bg-amber-50 text-amber-700 ring-amber-100",
+    red: "bg-red-50 text-red-700 ring-red-100",
+  };
+  return (
+    <div className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-100 flex items-start gap-3">
+      <div className={`rounded-xl p-2.5 ring-1 ${tones[tone]}`}><I size={20} /></div>
+      <div>
+        <div className="text-xs font-medium text-slate-500">{label}</div>
+        <div className="text-xl font-bold text-slate-900 mt-0.5">{value}</div>
+        {sub && <div className="text-xs text-slate-400 mt-0.5">{sub}</div>}
+      </div>
+    </div>
+  );
+}
+
+function Dashboard({ products, sales }) {
+  const today = todayKey();
+  const salesToday = sales.filter((s) => todayKey(new Date(s.date)) === today);
+  const revenueToday = salesToday.reduce((a, s) => a + s.total, 0);
+  const profitToday = salesToday.reduce((a, s) => a + s.profit, 0);
+  const revenueTotal = sales.reduce((a, s) => a + s.total, 0);
+  const profitTotal = sales.reduce((a, s) => a + s.profit, 0);
+  const stockValue = products.reduce((a, p) => a + p.price * p.stock, 0);
+  const lowStock = products.filter((p) => p.stock <= 3);
+
+  const last7 = useMemo(() => {
+    const days = [...Array(7)].map((_, i) => { const d = new Date(); d.setDate(d.getDate() - (6 - i)); return d; });
+    const vals = days.map((d) => {
+      const key = todayKey(d);
+      return sales.filter((s) => todayKey(new Date(s.date)) === key).reduce((a, s) => a + s.total, 0);
+    });
+    const max = Math.max(1, ...vals);
+    return days.map((d, i) => ({ dia: d.toLocaleDateString("pt-MZ", { weekday: "short" }), valor: vals[i], pct: (vals[i] / max) * 100 }));
+  }, [sales]);
+
+  return (
+    <div className="space-y-5">
+      <div className="grid grid-cols-2 gap-3">
+        <StatCard icon={Icon.Dollar} label="Faturamento hoje" value={`${fmt(revenueToday)} MT`} tone="blue" />
+        <StatCard icon={Icon.Trend} label="Lucro hoje" value={`${fmt(profitToday)} MT`} tone="green" />
+        <StatCard icon={Icon.Receipt} label="Faturamento total" value={`${fmt(revenueTotal)} MT`} tone="blue" sub={`${sales.length} vendas`} />
+        <StatCard icon={Icon.Trend} label="Lucro total" value={`${fmt(profitTotal)} MT`} tone="green" />
+        <StatCard icon={Icon.Package} label="Valor em estoque" value={`${fmt(stockValue)} MT`} tone="amber" />
+        <StatCard icon={Icon.Alert} label="Estoque baixo" value={lowStock.length} tone={lowStock.length ? "red" : "blue"} sub={lowStock.length ? lowStock.map((p) => p.name).join(", ") : "Tudo em ordem"} />
+      </div>
+      <div className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-100">
+        <div className="text-sm font-semibold text-slate-700 mb-3">Faturamento dos últimos 7 dias</div>
+        <div className="flex items-end justify-between gap-2" style={{ height: 140 }}>
+          {last7.map((d, i) => (
+            <div key={i} className="flex-1 flex flex-col items-center gap-1.5">
+              <div className="w-full bg-blue-100 rounded-t-md relative" style={{ height: 100 }}>
+                <div className="absolute bottom-0 left-0 right-0 bg-blue-700 rounded-t-md transition-all" style={{ height: `${d.pct}%` }}></div>
+              </div>
+              <div className="text-[10px] text-slate-400 font-medium">{d.dia}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Estoque({ products, saveProducts }) {
+  const [form, setForm] = useState({ name: "", price: "", cost: "", stock: "" });
+  const [showForm, setShowForm] = useState(false);
+
+  const addProduct = () => {
+    if (!form.name || !form.price || !form.stock) return;
+    const next = [...products, { id: "p" + Date.now(), name: form.name, price: parseFloat(form.price) || 0, cost: parseFloat(form.cost) || 0, stock: parseInt(form.stock) || 0 }];
+    saveProducts(next); setForm({ name: "", price: "", cost: "", stock: "" }); setShowForm(false);
+  };
+  const removeProduct = (id) => saveProducts(products.filter((p) => p.id !== id));
+  const adjustStock = (id, delta) => saveProducts(products.map((p) => (p.id === id ? { ...p, stock: Math.max(0, p.stock + delta) } : p)));
+
+  return (
+    <div className="space-y-4">
+      <div className="flex items-center justify-between">
+        <div className="text-sm font-semibold text-slate-700">Produtos ({products.length})</div>
+        <button onClick={() => setShowForm((v) => !v)} className="flex items-center gap-1.5 bg-blue-700 text-white text-sm font-medium px-3 py-2 rounded-xl active:scale-95 transition">
+          <Icon.Plus size={16} /> Produto
+        </button>
+      </div>
+      {showForm && (
+        <div className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-100 space-y-3">
+          <input placeholder="Nome do produto" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} className="w-full border border-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
+          <div className="grid grid-cols-3 gap-2">
+            <input placeholder="Preço (MT)" type="number" value={form.price} onChange={(e) => setForm({ ...form, price: e.target.value })} className="border border-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
+            <input placeholder="Custo (MT)" type="number" value={form.cost} onChange={(e) => setForm({ ...form, cost: e.target.value })} className="border border-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
+            <input placeholder="Qtd." type="number" value={form.stock} onChange={(e) => setForm({ ...form, stock: e.target.value })} className="border border-slate-200 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200" />
+          </div>
+          <button onClick={addProduct} className="w-full bg-blue-700 text-white text-sm font-semibold py-2.5 rounded-xl active:scale-95 transition">Guardar produto</button>
+        </div>
+      )}
+      <div className="space-y-2">
+        {products.map((p) => (
+          <div key={p.id} className="bg-white rounded-2xl p-3.5 shadow-sm ring-1 ring-slate-100 flex items-center gap-3">
+            <div className="flex-1 min-w-0">
+              <div className="font-semibold text-slate-800 text-sm truncate">{p.name}</div>
+              <div className="text-xs text-slate-400 mt-0.5">Preço {fmt(p.price)} MT · Custo {fmt(p.cost)} MT</div>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <button onClick={() => adjustStock(p.id, -1)} className="w-7 h-7 rounded-lg bg-slate-100 text-slate-600 text-sm font-bold flex items-center justify-center active:scale-90">−</button>
+              <span className={`min-w-[2.25rem] text-center font-bold text-sm px-1.5 py-1 rounded-lg ${p.stock <= 3 ? "bg-red-50 text-red-600" : "bg-blue-50 text-blue-700"}`}>{p.stock}</span>
+              <button onClick={() => adjustStock(p.id, 1)} className="w-7 h-7 rounded-lg bg-slate-100 text-slate-600 text-sm font-bold flex items-center justify-center active:scale-90">+</button>
+            </div>
+            <button onClick={() => removeProduct(p.id)} className="text-slate-300 active:text-red-500 p-1"><Icon.Trash size={16} /></button>
+          </div>
+        ))}
+        {products.length === 0 && <div className="text-center text-slate-400 text-sm py-10">Nenhum produto no estoque ainda.</div>}
+      </div>
+    </div>
+  );
+}
+
+function NovaVenda({ products, sales, saveProducts, saveSales, setMsg }) {
+  const [mode, setMode] = useState("simples");
+  const [items, setItems] = useState([{ productId: "", qty: 1 }]);
+  const [comboPrice, setComboPrice] = useState("");
+  const productOptions = products.filter((p) => p.stock > 0);
+
+  const updateItem = (idx, field, value) => setItems((prev) => prev.map((it, i) => (i === idx ? { ...it, [field]: value } : it)));
+  const addItemRow = () => { if (items.length < 3) setItems((prev) => [...prev, { productId: "", qty: 1 }]); };
+  const removeItemRow = (idx) => setItems((prev) => prev.filter((_, i) => i !== idx));
+
+  const resolvedItems = items.filter((it) => it.productId).map((it) => {
+    const prod = products.find((p) => p.id === it.productId);
+    return prod ? { ...it, product: prod, qty: Number(it.qty) || 1 } : null;
+  }).filter(Boolean);
+
+  const sumIndividual = resolvedItems.reduce((a, it) => a + it.product.price * it.qty, 0);
+  const sumCost = resolvedItems.reduce((a, it) => a + it.product.cost * it.qty, 0);
+  const finalTotal = mode === "promo" && comboPrice !== "" ? parseFloat(comboPrice) || 0 : sumIndividual;
+  const profit = finalTotal - sumCost;
+  const canSubmit = resolvedItems.length > 0 && (mode === "simples" || resolvedItems.length >= 2) && resolvedItems.every((it) => it.qty > 0 && it.qty <= it.product.stock);
+
+  const registarVenda = () => {
+    if (!canSubmit) return;
+    const updatedProducts = products.map((p) => {
+      const match = resolvedItems.find((it) => it.product.id === p.id);
+      return match ? { ...p, stock: p.stock - match.qty } : p;
+    });
+    const sale = {
+      id: "s" + Date.now(), date: new Date().toISOString(), type: mode,
+      items: resolvedItems.map((it) => ({ productId: it.product.id, name: it.product.name, qty: it.qty, unitPrice: it.product.price })),
+      total: finalTotal, cost: sumCost, profit,
+    };
+    saveProducts(updatedProducts); saveSales([sale, ...sales]);
+    setItems([{ productId: "", qty: 1 }]); setComboPrice("");
+    setMsg("Venda registada e estoque atualizado ✓"); setTimeout(() => setMsg(""), 2500);
+  };
+
+  return (
+    <div className="space-y-4">
+      <div className="bg-white rounded-2xl p-1.5 shadow-sm ring-1 ring-slate-100 flex gap-1.5">
+        <button onClick={() => { setMode("simples"); setItems([{ productId: "", qty: 1 }]); setComboPrice(""); }} className={`flex-1 text-sm font-semibold py-2 rounded-xl transition ${mode === "simples" ? "bg-blue-700 text-white" : "text-slate-500"}`}>Venda simples</button>
+        <button onClick={() => { setMode("promo"); setItems([{ productId: "", qty: 1 }, { productId: "", qty: 1 }]); }} className={`flex-1 text-sm font-semibold py-2 rounded-xl transition ${mode === "promo" ? "bg-blue-700 text-white" : "text-slate-500"}`}>Promoção (2–3 produtos)</button>
+      </div>
+      <div className="bg-white rounded-2xl p-4 shadow-sm ring-1 ring-slate-100 space-y-3">
+        {items.map((it, idx) => {
+          const prod = products.find((p) => p.id === it.productId);
+          return (
+            <div key={idx} className="flex items-center gap-2">
+              <select value={it.productId} onChange={(e) => updateItem(idx, "productId", e.target.value)} className="flex-1 border border-slate-200 rounded-xl px-2.5 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-200">
+                <option value="">Selecionar produto…</option>
+                {productOptions.map((p) => <option key={p.id} value={p.id}>{p.name} · estoque {p.stock}</option>)}
+              </select>
+              <input type="number" min={1} max={prod ? prod.stock : 99} value={it.qty} onChange={(e) => updateItem(idx, "qty", e.target.value)} className="w-16 border border-slate-200 rounded-xl px-2 py-2 text-sm text-center focus:outline-none focus:ring-2 focus:ring-blue-200" />
+              {items.length > 1 && <button onClick={() => removeItemRow(idx)} className="text-slate-300 active:text-red-500 p-1"><Icon.X size={16} /></button>}
+            </div>
+          );
+        })}
+        {mode === "promo" && items.length < 3 && <button onClick={addItemRow} className="text-blue-700 text-sm font-semibold flex items-center gap-1"><Icon.Plus size={14} /> Adicionar 3º produto</button>}
+        {mode === "promo" && (
+          <div>
+            <label className="text-xs font-medium text-slate-500">Preço da promoção (MT)</label>
+            <input type="number" placeholder={sumIndividual ? `Sugerido: ${fmt(sumIndividual)}` : "0.00"} value={comboPrice} onChange={(e) => setComboPrice(e.target.value)} className="w-full border border-slate-200 rounded-xl px-3 py-2 text-sm mt-1 focus:outline-none focus:ring-2 focus:ring-blue-200" />
+          </div>
+        )}
+      </div>
+      {resolvedItems.length > 0 && (
+        <div className="bg-blue-50 rounded-2xl p-4 ring-1 ring-blue-100 space-y-1.5">
+          <div className="flex justify-between text-sm"><span className="text-slate-500">Total da venda</span><span className="font-bold text-slate-800">{fmt(finalTotal)} MT</span></div>
+          <div className="flex justify-between text-sm"><span className="text-slate-500">Custo</span><span className="font-medium text-slate-600">{fmt(sumCost)} MT</span></div>
+          <div className="flex justify-between text-sm"><span className="text-slate-500">Lucro</span><span className={`font-bold ${profit >= 0 ? "text-emerald-600" : "text-red-600"}`}>{fmt(profit)} MT</span></div>
+        </div>
+      )}
+      <button disabled={!canSubmit} onClick={registarVenda} className={`w-full py-3 rounded-xl font-bold text-sm transition active:scale-95 ${canSubmit ? "bg-blue-700 text-white" : "bg-slate-100 text-slate-400"}`}>Registar venda</button>
+      {!canSubmit && resolvedItems.length > 0 && mode === "promo" && resolvedItems.length < 2 && <div className="text-xs text-amber-600 text-center">Uma promoção precisa de pelo menos 2 produtos.</div>}
+    </div>
+  );
+}
+
+function Vendas({ sales }) {
+  const [open, setOpen] = useState(null);
+  return (
+    <div className="space-y-2">
+      {sales.length === 0 && <div className="text-center text-slate-400 text-sm py-10">Ainda não há vendas registadas.</div>}
+      {sales.map((s) => (
+        <div key={s.id} className="bg-white rounded-2xl shadow-sm ring-1 ring-slate-100 overflow-hidden">
+          <button onClick={() => setOpen(open === s.id ? null : s.id)} className="w-full flex items-center gap-3 p-3.5">
+            <div className={`rounded-xl p-2 ${s.type === "promo" ? "bg-amber-50 text-amber-600" : "bg-blue-50 text-blue-700"}`}>
+              {s.type === "promo" ? <Icon.Layers size={16} /> : <Icon.Cart size={16} />}
+            </div>
+            <div className="flex-1 text-left min-w-0">
+              <div className="text-sm font-semibold text-slate-800 truncate">{s.items.map((i) => i.name).join(" + ")}</div>
+              <div className="text-xs text-slate-400">{new Date(s.date).toLocaleString("pt-MZ", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" })}</div>
+            </div>
+            <div className="text-right">
+              <div className="text-sm font-bold text-slate-800">{fmt(s.total)} MT</div>
+              <div className="text-xs text-emerald-600 font-medium">+{fmt(s.profit)} MT</div>
+            </div>
+            <Icon.Chevron size={16} p={{}} />
+          </button>
+          {open === s.id && (
+            <div className="border-t border-slate-100 px-3.5 py-3 space-y-1.5 bg-slate-50">
+              {s.items.map((i, idx) => (
+                <div key={idx} className="flex justify-between text-xs text-slate-500"><span>{i.qty}× {i.name}</span><span>{fmt(i.unitPrice * i.qty)} MT (preço normal)</span></div>
+              ))}
+              <div className="flex justify-between text-xs text-slate-500 pt-1"><span>Custo total</span><span>{fmt(s.cost)} MT</span></div>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function App() {
+  const { products, sales, saveProducts, saveSales } = useStorage();
+  const [tab, setTab] = useState("painel");
+  const [msg, setMsg] = useState("");
+
+  const tabs = [
+    { id: "painel", label: "Painel", icon: Icon.Grid },
+    { id: "estoque", label: "Estoque", icon: Icon.Package },
+    { id: "venda", label: "Nova venda", icon: Icon.Cart },
+    { id: "vendas", label: "Vendas", icon: Icon.Receipt },
+  ];
+
+  return (
+    <div className="min-h-screen bg-slate-50 pb-24">
+      <div className="bg-gradient-to-br from-blue-800 to-blue-600 px-4 pt-6 pb-8 rounded-b-3xl shadow-md">
+        <Logo size={44} />
+      </div>
+      <div className="px-4 -mt-4">
+        {msg && <div className="mb-3 text-sm font-medium px-3.5 py-2.5 rounded-xl shadow-sm bg-emerald-50 text-emerald-700 ring-1 ring-emerald-100">{msg}</div>}
+        {tab === "painel" && <Dashboard products={products} sales={sales} />}
+        {tab === "estoque" && <Estoque products={products} saveProducts={saveProducts} />}
+        {tab === "venda" && <NovaVenda products={products} sales={sales} saveProducts={saveProducts} saveSales={saveSales} setMsg={setMsg} />}
+        {tab === "vendas" && <Vendas sales={sales} />}
+      </div>
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 flex px-2 py-2 shadow-[0_-2px_10px_rgba(0,0,0,0.04)]">
+        {tabs.map((t) => (
+          <button key={t.id} onClick={() => setTab(t.id)} className={`flex-1 flex flex-col items-center gap-1 py-1.5 rounded-xl transition ${tab === t.id ? "text-blue-700" : "text-slate-400"}`}>
+            <t.icon size={20} />
+            <span className="text-[10px] font-semibold">{t.label}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+</script>
+
+</body>
+</html>
